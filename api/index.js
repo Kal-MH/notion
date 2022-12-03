@@ -4,7 +4,7 @@ const API_END_POINT = process.env.API_END_POINT;
 const USERNAME = process.env.USERNAME;
 
 export default async function handler(req, res) {
-  const documentId = req.query;
+  const { documentId } = req.query;
 
   let id = "";
   if (documentId) {
