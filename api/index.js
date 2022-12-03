@@ -6,7 +6,7 @@ const USERNAME = process.env.USERNAME;
 export default async function handler(req, res) {
   const documentId = req.query;
 
-  const response = await fetch(`${API_END_POINT}${documentId ? `/${documentId}` : ""}`, {
+  const response = await fetch(`${API_END_POINT}`, {
     headers: {
       "Content-Type": "application/json",
       "x-username": USERNAME,
